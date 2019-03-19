@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+   
+    <body>
+    <form>
+    name:
+    <input type="text" id="myInput" oninput="myFunction1()"><br>
+    Repert name:
+    <input  id="demo" type="text"><br>
+    
+    Parmanent address:
+    <textarea type="text" placeholder="parmanent address" id="id3" class="cl3"></textarea><br>
+    <input type="checkbox" id="id4" class="cl4" onclick="callme()" >
+    If both are same address<br>
+    Present address:
+    <textarea type="text" placeholder="present address" id="id5" class="cl5" ></textarea>
+    </form>
+    <script type = "text/javascript">
+
+
+        function callme(){
+            var z=document.getElementById('id4');
+            if(z.checked){
+            var y=document.getElementById('id3').value;
+            document.getElementById('id5').value=y;
+        }
+    }
+    
+
+                   
+function myFunction1() {
+                    var x = document.getElementById("myInput").value;
+                    document.getElementById("demo").value = x;
+}
+</script>
+                
+             
+
+   
+</body>
+
+    </html>

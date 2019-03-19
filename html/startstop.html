@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            div{
+                border:solid;
+               /* height:100px;
+                width:100px;*/
+                display:inline-block;
+                text-align:center;
+                padding:50px;
+                margin-right: 20px
+                box-sizeing: border-box;
+                border-radius: 100%;
+                }
+                
+                
+    
+            
+        </style>
+    </head>
+<body>
+        <input type="button" value="start" onclick="callme()"/>
+        <input type="button" value="stop" onclick="discall()"/>
+        <br></br>
+
+    <div style="background-color:rgb(17, 226, 104)" class="c1" onclick="changecolor(this)">first</div>
+    <div style="background-color:rgb(38, 175, 25)" class="c2" onclick="changecolor(this)">second</div>
+    <div style="background-color:rgb(26, 152, 168)" class="c3" onclick="changecolor(this)">third</div>
+    <div style="background-color:rgb(171, 52, 207)" class="c4" onclick="changecolor(this)">forth</div>
+
+    <script type="text/javascript">
+                function changecolor(temp)
+                {
+                    setInterval(bounce,1000,temp);
+                }
+                var flag=true;
+                function bounce(temp)
+                { 
+                if(flag)
+                    {
+                    temp.style.position = "relative";
+                    temp.style.top = "200px";
+                    flag=false;
+                    }
+                else{
+                    temp.style.position = "relative";
+                    temp.style.top = "0px";
+                    flag=true;
+                    }
+                }
+    
+     
+     </script>
+     
+</body>
+</html>

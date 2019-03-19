@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+   <!-- date:<input id="id3" type="text" placeholder="date" />
+
+    <input type="submit" value="submit" onclick="formatDate()"/><br-->
+    <spen id="demo"></spen>
+<script type="text/javascript">
+var x= new Date(2018, 11, 24, 10, 33, 30, 0);
+//var x =new Date(document.getElementById("id3").value);
+console.log(x);
+function formatDate(date) 
+{
+    var day = date.getDate();
+    if (day <10) 
+    {
+        day = "0" + day;
+    }
+
+    var monthNumber = date.getMonth();
+
+    var monthNames = ["January", "February", "March", "April",
+                        "May", "June", "July", "August", "September", 
+                        "October", "November", "December"];
+
+
+    var year = date.getFullYear();
+    
+    return day + "/" + monthNames[monthNumber] + "/" + year;
+}
+document.write(formatDate(x));
+//document.getElementById("demo").innerHTML=x;
+
+</script>
+</body>
+</html>

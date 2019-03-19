@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+   <head> 
+         <script src="../jquary/jquery-3.3.1.js" ></script>
+         <script type = "text/javascript">
+         
+            $(document).ready(function()
+            
+            {
+                $("div").css({"border":"solid","display":"inline-block","text-align":"center","padding":"50px","margin-right":" 20px","box-sizeing":"border-box","border-radius":"100%"});
+               
+
+                $("div").click(function()
+                {
+                    $(this).css({"position":"relative","top":"300px"});
+                    $(this).animate({"position":"relative","left":"200px"});
+                    $(this).animate({"position":"relative","top":"0px"});
+                    $(this).animate({"position":"relative","left":"0px"});
+                });
+            });
+          
+         </script>
+    </head>
+    <body>
+
+        <div id="i1" style="background-color:red">first</div>
+        <div id="i1" style="background-color:rgb(38, 175, 25)" >second</div>
+        <div id="i1" style="background-color:rgb(26, 152, 168)" >third</div>
+        <div id="i1" style="background-color:rgb(171, 52, 207)">forth</div>
+    </body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            div{
+                border:solid;
+               /* height:100px;
+                width:100px;*/
+                display:inline-block;
+                text-align:center;
+                padding:50px;
+                margin-right: 20px
+                box-sizeing: border-box;
+                border-radius: 100%;
+                }
+                
+                
+    
+            
+        </style>
+    </head>
+<body>
+
+    <div id="i1" style="background-color:red" onclick="changecolor(this)">first</div>
+    <div style="background-color:rgb(38, 175, 25)" onclick="changecolor(this)">second</div>
+    <div style="background-color:rgb(26, 152, 168)" onclick="changecolor(this)">third</div>
+    <div style="background-color:rgb(171, 52, 207)" onclick="changecolor(this)">forth</div>
+
+    <script text\javascript>
+    
+            function changecolor(temp)
+                {
+                    setInterval(bounce,1000,temp);
+                }
+                var flag=true;
+                function bounce(temp)
+                { 
+                if(flag)
+                    {
+                    temp.style.position = "relative";
+                    temp.style.top = "200px";
+                    flag=false;
+                    }
+                else{
+                    temp.style.position = "relative";
+                    temp.style.top = "0px";
+                    flag=true;
+                    }
+                }
+                //setInterval(hello,1000);
+                //setTimeout(hello,3000);
+                //temp.style.display="none";
+                //temp.style.backgroundColor="blue";
+                //temp.style.position = "relative";
+                // temp.style.top = "500px";}
+                /*function hello()
+                    {
+                        console.log("hello");
+                    }*/
+            
+     
+     </script>
+     
+</body>
+</html>

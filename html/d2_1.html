@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+   First number:<input type="text" id="id1" onfocus="changecolor(this)" onblur="changebackcolor(this)"/><br>
+   Last number:<input type="text" id="id2" onfocus="changecolor(this)" onblur="changebackcolor(this)"/>
+   addition:<input type="text" id="id4"/>
+   <br></br>
+ 
+ <input type="button" value="add" onclick="callme()"  />
+ the output is:<span id="id3"></span>
+<script>
+function callme(){
+var x =document.getElementById("id1").value;
+var y =document.getElementById("id2").value;
+/*var z = parseInt(x)+parseInt(y);*/
+var z=x+" "+y;
+document.getElementById("id3").innerHTML=z;
+document.getElementById("id4").value=z;
+
+
+document.getElementById("id1").style.backgroundColor="lightblue";
+
+document.getElementById("id2").style.backgroundColor="lightblue";
+document.getElementById("id4").style.backgroundColor="lightgreen";}
+
+function changecolor(temp1){
+temp1.style.backgroundColor="yellow";
+}
+function changebackcolor(temp)
+{
+temp.style.backgroundColor="white";
+    }
+</script>
+
+</body>
+</html>

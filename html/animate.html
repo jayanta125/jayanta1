@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+   <head> 
+         <script src="../jquary/jquery-3.3.1.js" ></script>
+         <script type = "text/javascript">
+         
+            $(document).ready(function()
+            
+            {
+                $("div").css({"border":"solid","display":"inline-block","text-align":"center","padding":"20px","margin-right":" 20px","box-sizeing":"border-box"});
+               
+
+                $("#id1").click(function()
+                {
+                    $("#i1").animate({"position":"relative","top":"100px"});
+                    $("#i1").animate({"position":"relative","left":"50px"});
+                    $("#i1").animate({"position":"relative","top":"0px"});
+                    $("#i1").animate({"position":"relative","left":"0px"});
+                });
+            });
+          
+         </script>
+    </head>
+    <body>
+            <input type="submit" id="id1" value="submit"/>       
+        <div id="i1" style="background-color:rgb(105, 255, 100)">first</div>
+    
+     </body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <title>from help of jquery</title>
+        <script src="../jquary/jquery-3.3.1.min.js"></script>
+        <script type = "text/javascript">
+     
+     $(document).ready(function()
+     {
+          $("#id1").click(function()
+        {
+            var eles=$("input[type=text].text");
+        });
+
+
+        $("#a").click(function()
+        {
+          var kk=$("c1=checked");
+         
+            if(c1==undefined)
+            {
+                $("span").text("plese select atlist one checkbox");
+            }
+           console.log(eles[i].value());
+        });
+   });
+   </script>
+   </head>
+
+   <body>
+        <h1>jquery</h1>
+        <from>
+     name:
+        <input name="first name" placeholder="name" /><br>
+      gendar:
+     <input type="radio" name="gendar" class="c1"   value="male"/> male
+     <input type="radio" name="gendar" class="c1"  value="female"/> female 
+     <span id="id2"></span>
+         
+     <br>
+     <input type="button" id="a" value="submit"/>
+     </from>
+
+
+</body>
+</html>

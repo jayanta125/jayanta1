@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+    <head>
+        <title>from</title>
+    </head>
+    <body>
+        <h1 style="color:tomato; align-content: center;">Employee resistration from</h1>
+    </body>
+        <form  method="GET" style="background-color: rgb(198, 229, 235)"><fieldset>
+            
+
+        Employee name:
+        <input name="first name" placeholder="name" pattern="[A-Z]{1}[a-z]+[ ]{1}[A-Z]{1}[a-z]+" onfocus="caller()" onblur="caller()"/>
+            <br>
+        Employee password:
+            <input type="password" name="password" placeholder="password" pattern="[A-Z]{1}[a-z0-9!@#$&]+"/>
+        <br>
+        Employee email:
+            <input type="email" name="email" placeholder="email">
+        <br>
+        Employee gendar:
+            <input type="radio"  value="male" checked="checked"/> male
+            <input type="radio"  value="female"/> female<br>
+             cities:
+                <input type="checkbox"  value="bangalore" />bangalore
+                <input type="checkbox" value="westbengal"/> westbengal
+                <input type="checkbox"  value="bihar"/> bihar<br>
+            Address:
+            <textarea rows="3" cols="20" name="Address" ></textarea><br>
+            
+            Address1:
+            <textarea rows="3" cols="20" name="Address" minlength="10" maxlength="20"></textarea><br>
+            Address2:
+            <textarea rows="3" cols="20" name="Address" pattern="[A-Z a-z,{8,10}]+"></textarea><br>
+            Technologies:
+            <select name="Technologies" multiple>
+                <option selected>select</option>
+                <option>ece</option>
+                <option>me </option>
+                <option>cse </option>
+                <option>ee </option>
+            </select><br>
+            <input type="Submit" value="Submit from"/>
+            <button>submit button</button>
+            <input type="Reset" value="Reset from"/>
+            <input type="button" value="Click me" onclick="callme()"  />
+        </fieldset>
+    </form>
+    <script>
+    function callme()
+    {
+    alert("hfj")
+    }
+    function caller()
+    {
+    console.log("edgfhg")
+    }
+    var x-10;
+    console.log(typeof(x));
+    
+    </script>
+    
+</html>

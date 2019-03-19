@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Registration From</title>
+     
+    </head>
+    <body><h1>Registration From</h1>
+    <form>
+
+        User Name:<input type="text" name="name" placeholder="User Name"/><br>
+        Password:<input type="password" class="cl1" id="id1" onchange="validatepass()"  placeholder="Password">
+        <input type="checkbox" onclick="callme()">Show password<br>
+        Re-enter password:<input type="password" class="cl2" id="id2" onkeyup="validatepass()" placeholder="User Name"> <br>
+
+        <input type="Submit" value="Submit" onchange="validatepass()" class="cl4" id="id4"disabled />
+        <input type="Reset" value="Reset" class="cl5" id="id5"/>
+
+        <script>
+        function callme(){
+            var x=document.getElementById("id1");
+            var m=document.getElementById("id2");
+           
+            if(x.type ==="password"){
+                x.type="text";
+                }
+            else
+            {
+                x.type="password";s
+            }
+            if(m.type ==="password"){
+                m.type="text";
+                }
+            else
+            {
+                m.type="password";
+            }
+        }
+
+            function validatepass(){
+            var y=document.getElementById("id1");
+            var z=document.getElementById("id2");
+           var k=document.getElementById("id4");
+            if(y.value==z.value)
+            {
+                k.disabled=false; 
+            }
+            else{
+                k.disabled=true; 
+            }
+        }
+        </script>
+
+    </form>
+    </body>
+        
+</html>

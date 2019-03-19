@@ -1,0 +1,9 @@
+/*{background-color: rgb(255, 0, 0)}*/
+table,th,td{
+    border-collapse:collapse;}
+/*table,th{color:blue;}
+/*table,td{color:rgb(189, 39, 127);}*/
+#id1{color:rgb(0, 0, 0);background-color: rgb(255, 0, 0);}
+/*#id2{color:rgb(255, 255, 255);background-color: rgb(0, 0, 0);}
+#id3{color:rgb(220, 235, 14);}*/
+.c1{color:rgb(233, 21, 162);background-color: rgb(0, 0, 0);}

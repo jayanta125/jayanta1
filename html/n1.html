@@ -1,0 +1,105 @@
+<html>
+        <head>
+        <title>Hello</title>
+        <script src="../jquary/jquery-3.3.1.mijs">
+        </script>
+        <script>
+           $(document).ready(function()
+{
+    $("div").click(function()
+    {
+        $(this).animate({"position":"relative","top":"200px"});
+        $(this).animate({"position":"relative","left":"300px"});
+        $(this).animate({"position":"relative","top":"0px"});
+        $(this).animate({"position":"relative","left":"0px"});
+    });
+});
+
+
+        </script>
+        <style>
+            
+        .a{
+            border:solid;
+            height:100px;
+            width:100px;
+            background-color:red;
+        position: relative;
+        
+        }
+        .b{
+            border:solid;
+            height:100px;
+            width:100px;
+            background-color:blue;
+            position: relative;
+        }
+        .c{
+            
+            border:solid;
+            height:100px;
+            width:100px;
+            background-color:green;
+            position: relative;
+        }
+        .d{
+            border:solid;
+            height:100px;
+            width:100px;
+            background-color:yellow;
+            position: relative;
+        
+        }
+        
+        div{
+            
+            display:inline-block;
+            text-align:center;
+            padding:30px;   
+            margin-right: 30px;
+            box-sizing : border-box;
+            border-radius: 80%;
+         
+        }
+        
+        </style>
+         <body>
+        
+<div id="hi" class="a" onclick="bouncer(this)">Hi</div>
+        <div class="b"  onclick="bouncer(this)">Welcome</div>
+        <div class="c" onclick="bouncer(this)">to</div>
+        <div class="d"  onclick="bouncer(this)">IIHT</div>
+ 
+           <script>
+   
+   var a=setInterval(bounce,1000,temp)
+   clearInterval(a);
+   function bouncer(temp)
+{
+    setInterval(bounce,1000,temp);   
+}
+var flag=false;
+
+function bounce(temp)
+{
+    if(!flag)
+    {
+        temp.style.position = "relative";
+        temp.style.top = "500px";
+        flag=true;
+    }
+    else
+    {
+        temp.style.position = "relative";
+        temp.style.top = "0px";
+    flag=false;
+    }
+}
+
+               </script> 
+        
+
+        
+        </body>
+        </head>
+        </html>

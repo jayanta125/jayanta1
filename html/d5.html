@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+   <head> 
+         <script src="../jquary/jquery-3.3.1.js"></script>
+         
+    </head>
+   <body > 
+        Employee name:<input type="text" placeholder="Full Name" name="Full name" id="tex"/>
+       <input type="button" value="button" id="a"/>
+       <span id="id1"></span><br>
+        
+        Employee password:
+        <input id="pass" type="password" name="password" placeholder="password"/>
+        <span id="id2"></span><br>
+       
+
+        Employee email:
+            <input id="mail" type="email" name="email"  placeholder="email"/>
+            <span id="id3"></span><br>
+        <br>
+
+        Employee gendar:
+            <input type="radio" name="gendar" class="radbtn"  value="male" checked/> male
+            <input type="radio" name="gendar" class="radbtn"  value="female"/> female 
+            <span id="id4"></span><br></br>
+
+        cityes:
+            <input type="checkbox" class="a" name="bangalore"  value="bangalore" />bangalore
+            <input type="checkbox" class="a" name="west bengal" value="west bengal"/> westbengal
+            <input type="checkbox" class="a" name="bihar"  value="bihar"/> bihar
+            <span id="id5"></span><br><br>
+                        
+        Address1:
+            <textarea id="id4"  rows="3" cols="20" name="Address" placeholder="address"></textarea>
+            <span id="id6"></span><br><br>
+
+        Technologies:
+            <select>
+                <option  selected>select</option>
+                <option class="k">ece</option>
+                <option class="k">me </option>
+                <option class="k">cse </option>
+                <option class="k">ee </option>
+            </select><span id="id11"></span><br><br>
+
+            <input type="Submit" value="Submit from"/>
+            <input type="Reset" value="Reset from"/>
+            <input type="button" value="button" id="btn"/>
+            <input type="button" value="clickme" id="clk"/>
+
+
+       Name:<input type="text" placeholder="Full Name" id="text"/>
+       <input type="button" value="button" id="a"/>
+       <span id="id1"></span><br>
+       Employee gendar:
+            <input type="radio" name="gendar" class="radbtn"  value="male"/> male
+            <input type="radio" name="gendar" class="radbtn"  value="female"/> female 
+            <span id="id2"></span><br>
+
+        cityes:
+        <input type="checkbox" class="a"  value="bangalore" />bangalore
+        <input type="checkbox" class="a" value="westbengal"/> westbengal
+        <input type="checkbox" class="a"  value="bihar"/> bihar<br>
+        <span id="id3"></span><br><br>
+
+    <script type = "text/javascript">
+    
+    $(document).ready(function()
+    {
+        $("#a").click(function()
+        {
+            var val=$("input[type=text]").val();
+            var pattern="^[A-Z a-z]+$"
+            var radioElement=$("input[type=radio]:checked");
+            var checkElement=$("input[type=checkbox]:checked");
+            console.log(val);
+            if(val.match(pattern)==null||val.trim().length==0)
+            {
+                $("#id1").text("plase enter currectly");
+            }
+           else
+           {
+           $("#id1").text(val);
+            }
+            if(radioElement.val()==undefined)
+            {
+                $("#id2").text("plese select");
+            }
+            else
+           {
+            radioElement.each(
+                function(){
+                    var checked="";
+                    checked=checked+$(this).val();
+                    $("#id2").text(checked);
+                });
+            }
+            
+            if(checkElement.val()==undefined)
+            {
+                $("#id3").text("plese select atlist one checkbox");
+            }
+            else
+           {
+            checkElement.each(
+                function(){
+                    var checkbox=" ";
+                    checkbox=checkbox+$(this).val();
+                    $("#id3").text(checkbox);
+                   /*for(var i=0;i<checkElement.length;i++) {
+                   if(checkElement[i].checked) {
+                       checkbox=checkbox+","+checkElement[i].value;
+                   }
+                }$("#id3").text(checkbox);*/
+                });
+            }
+            
+        });
+   });
+    
+    </script>
+   </body>

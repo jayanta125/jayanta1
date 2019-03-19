@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+   <head> 
+         <script src="../jquary/jquery-3.3.1.js" ></script>
+         <script type = "text/javascript">
+         
+
+    
+    $(document).ready(function()
+    {  
+      
+  //  $("opction:select").each(function()
+  //  {
+        $("#a").click(function()
+        {
+            var eles=$("input[type=select].selected");
+         var eles="";
+           // for(var i=0;i<eles.length;i++)
+          // {
+                if(eles.val()==undefined)
+            {
+                $("#id1").text("plese select atlist one checkbox");
+            }
+           console.log(eles[i].value());
+           //}
+        });
+   });
+// });
+
+   
+</script>
+<body>
+    Technologies:
+            <select>
+                <option  selected>select</option>
+                <option class="k">ece</option>
+                <option class="k">me </option>
+                <option class="k">cse </option>
+                <option class="k">ee </option>
+                </select>
+                <input type="button" value="button" id="a"/>
+                <span id="id1"></span><br>
+</html>

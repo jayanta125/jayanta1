@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+        function startblock() {
+var speed = 6,
+    
+    moveBox = function(moveBy) {
+      var el = document.getElementById('box'),
+          left = el.offsetLeft;
+      
+      if ( (moveBy > 0 && left > 500) || (moveBy < 0 && left < 51) ) {
+        clearTimeout(timer);
+        timer = setInterval(function() {
+          moveBox(moveBy * -1);  // to change direction
+        }, speed);
+      }
+      
+      el.style.left = left + moveBy + 'px';
+
+    };
+  
+var timer = setInterval(
+  function() { 
+    moveBox(5); 
+  }
+  , speed);
+        </script>
+        <style>
+        div{
+            border:solid;
+            display:inline-block;
+            text-align:center;
+            padding:50px;
+            margin-right:20px;
+            border-radius:100%;
+            }
+        </style>
+
+    </head>
+    <body>
+        <input type="button" value="start" id="box" onclick="startblock()"/ >
+        <input type="button" value="stop" onclick="stopblock()" >
+            <div id="id1" style="background-color:red">first</div>
+    </body>
+</html>

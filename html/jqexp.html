@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+   <head> 
+       <script src="../jquary/jquery-3.3.1.js" ></script>
+      <script type = "text/javascript">
+         
+            /*function Warn() {
+               alert ("This is a warning message!");
+            }*/
+            $(document).ready(function()
+            {
+              /* $("p").click(function()
+               {*/
+              //  console.log("checked");
+              // console.log($(this).text());
+             // alert("checked"+document.getElementById("id1").innerHTML());
+             //$(this).css({"background-color":"lightblue","color":"black"});
+            //$(this).css("display","none");
+            //$(this).text("hello");
+            //$(this).html("<b>hello</b>");
+            //$(this).attr("title","my title");
+             $("#hide").click(function(){
+                 // $("p").hide();
+                 //$("p").hide(1000);
+                // $("p").fadeOut(1000);
+                $("p").slideUp(1000);
+
+                
+               });
+           
+               $("#show").click(function(){
+                  //$("p").show();
+                  //$("p").fadeIn(1000);
+                  $("p").slideDown(1000);
+               });
+               $("#toggle").click(function(){
+                  //$("p").show();
+                  //$("p").fadeIn(1000);
+                  $("p").toggle(1000);
+               });
+            });
+            </script>
+   </head>
+   
+   <body>
+      <p id="d1">Click the following button to see the result: </p>  
+      <p id="d2">Click the following  to see the result: </p>   
+      <input type="button"value="hide" id="hide"/>
+            <input type="button" value="show" id="show"/>
+            <input type="button" value="toggle" id="toggle"/>
+   </body>
+</html>

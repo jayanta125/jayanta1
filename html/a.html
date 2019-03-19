@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head><style> id3{
+            background-color:aqua;  
+        }</style></head>
+    <body >
+        
+        <form id="id3">
+<pre>
+<textarea type="text" name="name" id="id1" oninput="callme()"></textarea>
+<span id="id2"></span></pre>
+        </form>
+        <script type="text/javascript">
+        function callme()
+        {
+         var a=document.getElementById("id1").value;
+         document.getElementById("id2").innerHTML=a;   
+         document.getElementById("id2").style.color="red"; 
+         document.getElementById("id2").style.backgroundColor="aqua"; 
+        }
+       
+            </script>
+          <!--  <script type="text/javascript">
+            $(document).ready(function(){
+                $("#id1").input(function(){
+                    $("#id2").text($("#id1").val())
+                });
+            });
+            </script>  -->  
+    </body>
+</html>
